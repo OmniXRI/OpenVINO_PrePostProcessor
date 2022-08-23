@@ -1,0 +1,2 @@
+# OpenVINO_PrePostProcessor
+比較OpenVINO使用傳統Inference Engine和新版PrePostProcessor預處理模型推論效能範例
