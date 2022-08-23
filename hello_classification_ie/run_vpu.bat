@@ -1,0 +1,1 @@
+python hello_classification.py -m ./public/alexnet/FP16/alexnet.xml -i banana.jpg -d MYRIAD
