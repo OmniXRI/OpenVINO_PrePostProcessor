@@ -10,17 +10,13 @@ ov_opencv_linear.py 使用OpenCV & Numpy函式運行非線性亮度/對比增強
 執行方式： python ov_opencv_nonlinear.py scenery.jpg  
 產生結果： contrast_opencv_nonlinear.jpg  
 
-ov_ops.py  根據參考文獻建立之OpenVINO 2022.1 PPP範例程式（含產生預處理PPP IR模型simple_model_saved.xmlsimple_model_saved.bin）  
-執行方式：
+ov_ops.py  根據參考文獻建立之OpenVINO 2022.1 PPP範例程式（含產生預處理PPP IR模型simple_model_saved.xml, simple_model_saved.bin）  
+執行方式： python ov_ops.py scenery.jpg GPU  
+最後一個參數為推論裝置：CPU, GPU, MYRIAD (即Intel神經加速棒NCS2)  
 
-ov_custom_ppp.py 
-
-
-
-
-
-
-
+ov_custom_ppp.py 直接讀取預處理PPP模型運行亮度/對比增強像素處理範例程式  
+執行方式： python ov_custom_ppp.py simple_model_saved.xml scenery.jpg GPU  
+最後一個參數為推論裝置：CPU, GPU, MYRIAD (即Intel神經加速棒NCS2)  
 
 實驗結果示意圖：  
 ![](https://github.com/OmniXRI/OpenVINO_PrePostProcessor/blob/main/images/20220824_Fig_04.jpg?raw=true)
